@@ -90,12 +90,12 @@
 // 18:what is string 
 // 19:write your first string variable
 
-let username="per"
-let message="you have three new notifications"
+// let username="per"
+// let message="you have three new notifications"
 // console.log(username)
 // console.log(message+ ","+username)
-let messageToUser = message +  "," +username +"!"
-console.log(messageToUser)
+// let messageToUser = message +  "," +username +"!"
+// console.log(messageToUser)
 
 // 20greeting
 // let name="Anusree"
@@ -105,17 +105,44 @@ console.log(messageToUser)
 // 21 String vs. Numbers
 
 
-let name=45
-let greeting="Hi, my name is "
-myGreeting= greeting+name
-console.log(myGreeting)
+// let name=45
+// let greeting="Hi, my name is "
+// myGreeting= greeting+name
+// console.log(myGreeting)
 
-let points=4
-let bonusPoints="10"
-let totalPoints=points+bonusPoints
-console.log(totalPoints)
-console.log(5+5)
-console.log(7+8)
-console.log("2"+"6")
-console.log("4"+5)
+// let points=4
+// let bonusPoints="10"
+// let totalPoints=points+bonusPoints
+// console.log(totalPoints)
+// console.log(5+5)
+// console.log(7+8)
+// console.log("2"+"6")
+// console.log("4"+5)
 //  22 render a welcome message
+// friday
+// 24 use plus equal for count
+// count=count+1  
+// count =+ 1
+
+let  countEl = document.getElementById("count-el")
+
+let saveEl=document.getElementById("save-el")
+let count=0
+
+console.log(saveEl)
+
+function increment(){
+          count= count+1
+          countEl.textContent=count
+      }
+    
+function save(){
+let countStr=count+" - "
+// saveEl.innerText+=countStr
+saveEl.textContent += countStr
+countEl.textContent=0
+count=0
+console.log(count)
+}
+// 26:debugging online
+// 27:set the count to 
