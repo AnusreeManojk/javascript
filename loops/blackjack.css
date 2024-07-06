@@ -1,0 +1,31 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 2px;
+    gap:10px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    
+}

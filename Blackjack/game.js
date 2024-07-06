@@ -92,4 +92,6 @@ function newCard(){
 // 25:creating the cards array  
 // 26: push a new card to the  array  
 // counting in javascript
+                                                             
 
+                                     
