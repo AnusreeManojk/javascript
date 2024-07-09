@@ -12,21 +12,21 @@ if (leadsFromLocalStorage){
   myLeads=leadsFromLocalStorage
   render(myLeads)
 }
-const tabs=[
-  {url:"https://www.linkedin.com/in/per-harald borgen/"}
-]
-
-
+// const tabs=[
+//   {url:"https://www.linkedin.com/in/per-harald borgen/"}
+// ]
+ 
 tabBtn.addEventListener("click",function(){
   // chrome.tabs.query({active:true,currentWindow:true},function(tabs){
-    chrome.tab.query({active:true,currentwindow:true},function(){
-      console.log(tabs)
+    chrome.tab.query({active:true,currentwindow:true},function(tabs){
+      // console.log(tabs)
+      myLeads.push(tabs[0].url)
+      localStorage.setItem("myLeads", JSON.stringify( myLeads ))  
+      render(myLeads)
     })
-    
+  
   // console.log(tabs[0].url) 
-  myLeads.push(tabs[0].url)
-localStorage.setItem("myLeads", JSON.stringify( myLeads ))  
-render(myLeads)
+ 
 
 })
 function render(leads) {
@@ -59,9 +59,7 @@ inputBtn.addEventListener("click", function () {
     render(myLeads)
     console.log(localStorage.getItem("myLeads"))
   })
-
-  
-// 36 get the leads from localstorage
+ // 36 get the leads from localstorage
                                            
 // truthy and falsy statemnets
 // 40 style the delete button
@@ -69,4 +67,3 @@ inputBtn.addEventListener("click", function () {
 // 49 crete the tab btn
 // save the tab url
 // 52 Use the chrome API to get the tab
-``
